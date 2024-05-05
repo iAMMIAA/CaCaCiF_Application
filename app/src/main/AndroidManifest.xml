@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
 
     <application
@@ -15,6 +16,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CaCaCiF"
         tools:targetApi="31">
+        <activity
+            android:name=".MainApp"
+            android:exported="false"
+            android:label="@string/title_activity_main_app" />
+        <activity
+            android:name=".enterweightheigh"
+            android:exported="false" />
+        <activity
+            android:name=".signupactivity"
+            android:exported="false" />
+        <activity
+            android:name=".signinactivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Introductionapp"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

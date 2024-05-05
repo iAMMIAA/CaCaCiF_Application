@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".signinactivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="70dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00000000"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logoapp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:typeface="serif"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#6D171515"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="250dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/logo"/>
+
+    <TextView
+        android:id="@+id/TextViewslogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Let's log in to management calories in order to protect your health. "
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#EEF0F1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/signin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- EditText for Email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:typeface="serif"
+        android:hint=" Enter your email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#A0504D4D"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/TextViewslogan"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- EditText for Password -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint=" Enter your password"
+        android:typeface="serif"
+        android:inputType="textPassword"
+        android:textColorHint="#A0504D4D"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/buttonsignin"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#9943A047"
+            android:text="Login"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "
+            android:textSize="16sp"
+            android:textColor="#6F000000"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/buttonsignin" />
+
+        <Button
+            android:id="@+id/buttonsingup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/textViewSignUp"
+            app:layout_constraintTop_toBottomOf="@id/buttonsignin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
