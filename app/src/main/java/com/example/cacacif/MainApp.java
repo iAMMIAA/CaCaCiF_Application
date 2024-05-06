@@ -40,6 +40,22 @@ public class MainApp extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ImageButton notification = findViewById(R.id.imageButton);
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainApp.this, notification.class);
+                startActivity(intent);
+            }
+        });
+        ImageButton scan = findViewById(R.id.navigation_button2);
+        scan.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainApp.this,cameraactivity.class);
+                startActivity(intent);
+            }
+        }));
 
     }
 

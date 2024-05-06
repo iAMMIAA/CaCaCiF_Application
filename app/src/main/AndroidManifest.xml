@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature android:name="android.hardware.camera.any" />
     <uses-permission android:name="android.permission.CAMERA" />
-
-    <uses-feature android:name="android.hardware.camera" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CaCaCiF"
         tools:targetApi="31">
+        <activity
+            android:name=".cameraactivity"
+            android:exported="false" />
+        <activity
+            android:name=".notification"
+            android:exported="false" />
         <activity
             android:name=".searchactivity"
             android:exported="false" />
@@ -31,12 +36,6 @@
             android:exported="false" />
         <activity
             android:name=".signinactivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".Introductionapp"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
